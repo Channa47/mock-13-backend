@@ -19,7 +19,7 @@ let  generaterandom = (length,characters) =>{
 app.get("/",(req,res)=>{
     let characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     let randomWord = generaterandom(5,characters);
-    res.send({word : randomWord});
+    res.send(randomWord);
 })
 app.listen(8080,async()=>{
     try{
